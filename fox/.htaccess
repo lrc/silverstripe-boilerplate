@@ -1,0 +1,2 @@
+# Never accessible via apache.
+Deny from all
