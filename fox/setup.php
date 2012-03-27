@@ -60,11 +60,11 @@ else
 	}
 	else
 	{
-		$db = str_replace('<dbuser>', $dbuser);
-		$db = str_replace('<dbtype>', $dbtype);
-		$db = str_replace('<dbpass>', $dbpass);
-		$db = str_replace('<dbhost>', $dbhost);
-		$db = str_replace('<dbname>', $dbname);
+		$db = str_replace('<dbuser>', $dbuser, $db);
+		$db = str_replace('<dbtype>', $dbtype, $db);
+		$db = str_replace('<dbpass>', $dbpass, $db);
+		$db = str_replace('<dbhost>', $dbhost, $db);
+		$db = str_replace('<dbname>', $dbname, $db);
 		if ( false === @file_put_contents($db_new, $db)) {
 			echo "Could not write $db_new \n";
 		}
