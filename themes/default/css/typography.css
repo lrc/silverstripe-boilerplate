@@ -1,0 +1,10 @@
+/*
+
+This file is required for the backend, but should not be used on the front end.
+
+*/
+
+/* Hide the file system sync button because it's buggy */
+#filesystemsync {
+	display: none;
+}

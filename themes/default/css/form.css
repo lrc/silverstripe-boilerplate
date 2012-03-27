@@ -1,0 +1,203 @@
+/** 
+ * The Coffee Club Theme
+ *
+ * Form Styling
+ */
+    
+
+/* FIELDSETS
+---------------------------------------- */
+fieldset { border: 0; }
+
+/* ACTION BUTTONS
+---------------------------------------- */
+.Actions {
+    clear: both;
+}
+
+input.action {
+	margin: 10px;
+	padding: 8px;
+	font-family: Georgia, Times New Roman, Times, serif;
+	font-size: 14px;	
+	background: #00A5D3;
+	border: none;
+	color: #fff;
+	
+    -moz-border-radius: 4px;
+     -webkit-border-radius: 4px;
+     border-radius: 4px;
+}
+input.action:hover,
+input.action:focus {
+	cursor: pointer;
+	background: #CCCCCC;
+}
+
+/* FIELD FORMATING
+---------------------------------------- */
+form ul {
+	list-style: none;
+}
+
+.field {
+    clear: both;
+    width: 480px;
+    margin: 0 0 0 0;
+    padding: 10px 0 0 0;
+}
+
+.row {
+    clear: both;
+    margin: 0 0 0 0;
+    padding: 6px 0 0 0;
+}
+
+form .middleColumn {
+ 	display: block;
+	background: #FFFFFF;
+	padding: 0px;
+	width: 306px;
+	float: left;
+}
+
+.checkbox label {
+	width: auto;
+	float: none;
+	display: inline;
+	margin: 0;
+}
+
+.checkbox input {
+	margin:5px 0 0 115px;
+	vertical-align: text-bottom;
+}
+
+	
+/* INPUT BOXES
+---------------------------------------- */
+
+input.text, textarea, select {
+    float: left;
+    padding: 6px;
+    border: none;
+    color: #666666;
+    font-size: 11px;
+    width: 300px !important;
+    border: 1px solid #EDEDED;
+}
+
+select { width: 312px !important; }
+
+textarea {
+    font-family: Verdana, Tahoma, sans-serif;
+    float: left;
+    border: 1px solid #EDEDED;
+}
+input:focus span, textarea:focus span {
+    border: 1px solid #024E76;
+}
+
+form .date input.month,
+form .date input.day,
+form .date input.year {
+	width: auto;
+}
+
+form .datetime .clear {
+	clear: both;
+}
+
+form .datetime .date,
+form .datetime .time {
+	float: left;
+	clear: none;
+	width: auto;
+}
+	form .datetime .middleColumn .middleColumn {
+		width: auto;
+	}
+	form .datetime .date input,
+	form .datetime .time input {
+		width: auto;
+	}
+
+
+/* SELECT DROPDOWN
+---------------------------------------- */
+
+select {
+	width: 362px;
+}
+
+/* LABELS
+---------------------------------------- */
+label {
+ 	display: block;
+	float: left;
+	width: 115px;
+	margin: 3px 3px -6px 0;
+	color: #4D4D4D;
+	
+}
+
+label.right {
+	display:inline;
+}
+
+
+
+/* OPTION GROUP
+---------------------------------------- */
+optgroup {
+    padding: 0 0 0 5px;
+}
+
+optgroup option{
+    padding: 0 0 0 5px;
+}
+
+option.featured {
+    font-weight: bold;
+}
+
+/* CHECKBOXES
+---------------------------------------- */
+
+
+/* ERRORS
+---------------------------------------- */
+.message {
+	padding: 4px 0 10px 40px;
+	color:#EC1C24;
+	background: url(../images/icon-warning.gif) no-repeat;
+}
+
+.icon-warning {
+	float:left;
+	margin: -5px 10px 0px 0px;
+}
+
+input.error,
+select.error,
+textarea.error,
+ul.error,
+form div.error input,
+form div.error select,
+form div.error textarea	{
+		border: 1px solid #EC1C24 !important;
+}
+
+form div.error label {
+	color: #EC1C24
+}
+
+label.error {
+	display: none !important;
+}
+
+/* MISC
+---------------------------------------- */
+
+/* Hide the honey pots */
+form #URL {display: none;}
