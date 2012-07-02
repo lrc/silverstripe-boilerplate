@@ -1,18 +1,9 @@
 [submodule "cms"]
 	path = cms
 	url = https://github.com/silverstripe/silverstripe-cms.git
-[submodule "sapphire"]
-	path = sapphire
+[submodule "framework"]
+	path = framework
 	url = https://github.com/silverstripe/sapphire.git
 [submodule "blog"]
 	path = blog
 	url = https://github.com/silverstripe/silverstripe-blog.git
-[submodule "dataobject_manager"]
-	path = dataobject_manager
-	url = https://github.com/unclecheese/DataObjectManager.git
-[submodule "uploadify"]
-	path = uploadify
-	url = https://github.com/unclecheese/Uploadify
-[submodule "googlesitemaps"]
-	path = googlesitemaps
-	url = http://github.com/silverstripe-labs/silverstripe-googlesitemaps.git
