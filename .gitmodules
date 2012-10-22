@@ -4,6 +4,3 @@
 [submodule "framework"]
 	path = framework
 	url = https://github.com/silverstripe/sapphire.git
-[submodule "blog"]
-	path = blog
-	url = https://github.com/silverstripe/silverstripe-blog.git
