@@ -1,0 +1,8 @@
+#z-indexed-elemente {
+	position: relative; /* Without this the background will disappear, thanks to PIE see: http://css3pie.com/documentation/known-issues/#z-index */	
+}
+
+/* PIE give the powers of CSS3 to the ineptitude of IE < 9. See: http://css3pie.com/ */
+#none {
+	behavior: url(/themes/default/css/PIE.htc);
+}

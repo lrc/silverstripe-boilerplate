@@ -1,0 +1,39 @@
+
+/* WYSIWYG Editor Alignment Classes
+-------------------------------------------- */
+.left {
+	text-align: left;
+}
+.center {
+	text-align: center;
+}
+.right {
+	text-align: right;
+}
+
+/* Images
+-------------------------------------------- */
+img.right {
+	float: right;
+	margin-left: 20px;
+}
+img.left {
+	float: left;
+	margin-right: 20px;
+}
+img.leftAlone {
+	float: left;
+	margin: 20px 100% 20px 0;
+}
+img.center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+body.mceContentBody {
+	font-size: 100%;
+	line-height: 1.6em;
+	padding: 10px;
+}

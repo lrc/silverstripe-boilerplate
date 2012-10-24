@@ -1,20 +1,39 @@
 <!DOCTYPE html>
-<html lang="$ContentLocale">
+<html lang="$ContentLocale" class="no-js">
     <head>
 		<% base_tag %>
 		<title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> &raquo; $SiteConfig.Title</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0"/>
 		$MetaTags(false)
 		<link rel="shortcut icon" href="/favicon.ico" />
 
 		<!-- html5shiv needs to be included before all stylesheets -->
-		<!--[if lt IE 9]>
-			$StackJS(header_javascript_html5shiv)
-		<![endif]-->
+		<!--[if lt IE 9]><script src="themes/default/javascript/html5.js"></script><![endif]-->
 
-		$StackCSS(theme_styles)
-		$StackJS(header_javascript)
+		<link rel="stylesheet" type="text/css" href="themes/default/css/build/style.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="themes/default/css/build/lte-ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="themes/default/css/build/lte-ie7.css" /><![endif]-->
+		
+		<script data-main="themes/default/javascript/build/main" src="themes/default/javascript/require-jquery.js"></script>
+		<script>with(document.documentElement){className=className.replace(/no-js/,'js')}</script>
+		
+		<% if SiteConfig.GA %>
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', '{$SiteConfig.GA}']);
+			_gaq.push(['_trackPageview']);
+			_gaq.push(['_trackPageLoadTime']);
+
+			(function() {
+				var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+			})();
+		</script>
+		<% end_if %>
+		
     </head>
-    <body class="{$ClassName} {$Action} root-{$RootAncestor.URLSegment}">
+    <body class="{$ClassName}">
 		<header class="clearfix">
 			<a href="#" id="logo"><img src="themes/default/images/logo.png" alt="Logo"></a>
 		</header>
