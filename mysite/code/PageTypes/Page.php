@@ -81,6 +81,16 @@ class Page_Controller extends ContentController
 	}
 	
 	/**
+	 * Give the templates access to the live mode flag.
+	 *
+	 * @return boolean
+	 */
+	public function IsLive() 
+	{
+		return Director::isLive();
+	}
+	
+	/**
 	 * Search Form Request
 	 */
 	function results($data, $form){

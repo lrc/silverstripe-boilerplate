@@ -17,7 +17,7 @@
 		<script data-main="themes/default/javascript/build/main" src="themes/default/javascript/require-jquery.js"></script>
 		<script>with(document.documentElement){className=className.replace(/no-js/,'js')}</script>
 		
-		<% if SiteConfig.GA %>
+		<% if SiteConfig.GA && IsLive %>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
 			_gaq.push(['_setAccount', '{$SiteConfig.GA}']);
