@@ -1,0 +1,1 @@
+A boilerplate install of [Silverstripe](http://www.silverstripe.org). We use this as the starting point for most new projects.
