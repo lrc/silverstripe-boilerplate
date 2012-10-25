@@ -2,12 +2,8 @@
 assets/*
 _ss_environment.php
 tools/phing-metadata
-silverstripe-cache
 .buildpath
 .project
 .settings
 .sass-cache
 mysite/logs
-themes/default/css/style.css
-themes/default/css/style.min.css
-themes/default/css/editor.css
