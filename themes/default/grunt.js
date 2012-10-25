@@ -5,13 +5,17 @@ module.exports = function(grunt) {
   // Project configuration.
   grunt.initConfig({
     meta: {
-      banner: '/*! Copyright © <%= grunt.template.today("yyyy") %> Left, Right & Centre */'
+      banner: '/*! Copyright (c) <%= grunt.template.today("yyyy") %> Left, Right & Centre */'
     },
     min: {
-      dist: {
+      main: {
         src: ['<banner>', 'javascript/src/main.js'],
         dest: 'javascript/build/main.js'
-      }
+      },
+	  forms: {
+		  src: ['<banner>', 'javascript/src/jquery.validate.js'],
+		  dest: 'javascript/build/forms.js'
+	  }
     },
     watch: {
       files: 'javascript/src/*',

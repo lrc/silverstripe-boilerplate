@@ -11,6 +11,15 @@
 		// Wait for the DOM
 		$(function(){
 			
+			var $forms = $('form.validate'); // Forms that should be validated
+			
+			// If there are forms that need validating include the form js
+			if ($forms.length) {
+				require(['forms'], function(){
+					$forms.validate();
+				});
+			}
+			
 		});
 	});
 

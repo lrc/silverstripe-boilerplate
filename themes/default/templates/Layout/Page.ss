@@ -10,7 +10,7 @@
 
 <% include SideBar %>
 
-<div id="content-panel" class="typography">    
+<div id="content-panel" class="typography">
 	<article>
 		<h1 class="page-title">$Title</h1>
 		$Content
