@@ -11,7 +11,7 @@ fieldset { border: 0; }
 input.action {
 	margin: 10px;
 	padding: 8px;
-	font-family: Georgia, Times New Roman, Times, serif;
+	font-family: $font-family-buttons;
 	font-size: 14px;	
 	background: #00A5D3;
 	border: none;
