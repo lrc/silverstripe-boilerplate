@@ -10,11 +10,11 @@
 		<!-- html5shiv needs to be included before all stylesheets -->
 		<!--[if lt IE 9]><script src="themes/default/javascript/html5.js"></script><![endif]-->
 
-		<link rel="stylesheet" type="text/css" href="themes/default/css/build/style.css" />
-		<!--[if lte IE 8]><link rel="stylesheet" href="themes/default/css/build/lte-ie8.css" /><![endif]-->
-		<!--[if lte IE 7]><link rel="stylesheet" href="themes/default/css/build/lte-ie7.css" /><![endif]-->
+		<link rel="stylesheet" type="text/css" href="themes/default/css/style.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="themes/default/css/lte-ie8.css" /><![endif]-->
+		<!--[if lte IE 7]><link rel="stylesheet" href="themes/default/css/lte-ie7.css" /><![endif]-->
 		
-		<script data-main="themes/default/javascript/build/main" src="themes/default/javascript/require-jquery.js"></script>
+		<script data-main="themes/default/javascript/main" src="themes/default/javascript/require-jquery.js"></script>
 		<script>with(document.documentElement){className=className.replace(/no-js/,'js')}</script>
 		
 		<% if SiteConfig.GA && IsLive %>
