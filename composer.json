@@ -1,5 +1,5 @@
 {
-	"name": "silverstripe/installer",
+	"name": "lrc/silverstripe-boilerplate",
 	"description": "Boilerplate Silverstripe install",
 	"require": {
 		"php": ">=5.3.2",
