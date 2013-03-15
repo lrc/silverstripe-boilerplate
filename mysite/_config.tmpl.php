@@ -23,9 +23,6 @@ FulltextSearchable::enable();
 // Warnings and errors to log file we can access easily.
 SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__) . '/logs/errors-' . date('Ymd')), SS_Log::WARN, '<=');
 
-// Add some decorators to improve some core functionality.
-Object::add_extension('SiteConfig', 'SiteConfigDecorator');
-
 // Improve default image quality for resized images.
 GD::set_default_quality(90);
 
