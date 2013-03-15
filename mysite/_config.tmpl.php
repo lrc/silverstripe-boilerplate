@@ -8,7 +8,7 @@ require_once("conf/ConfigureFromEnv.php");
 MySQLDatabase::set_connection_charset('utf8');
 
 // Set default theme
-SSViewer::set_theme('default');
+SSViewer::set_theme('silverstripe-boilerplate-theme');
 
 // Set the site locale & timezone
 i18n::set_locale('en_AU');
