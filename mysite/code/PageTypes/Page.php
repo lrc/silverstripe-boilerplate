@@ -1,6 +1,9 @@
 <?php
 class Page extends SiteTree 
 {
+	public static $description = 'A standard page.';
+	public static $singular_name = 'Standard Page';
+	public static $plural_name = 'Standard Pages';
 
 	public static $db = array(
 		'InFooter' => 'Boolean',
@@ -39,45 +42,13 @@ class Page extends SiteTree
 
 class Page_Controller extends ContentController 
 {
-	
-	public function init() 
-	{
-		parent::init();
-		
-		// Provide the opportunity to set themes via the URL.
-		if ( isset($_GET['settheme']) ) {
-			$_SESSION['theme'] = $_GET['settheme'];
-		}
-		if ( isset($_GET['theme']) || isset($_SESSION['theme']) ) {
-			$theme = (isset($_GET['theme'])) ? $_GET['theme'] : $_SESSION['theme'];
-			SSViewer::set_theme($theme);
-		}
-	}
 
 	/**
 	 * Footer Menu
 	 */
 	public function FooterMenu()
 	{
-		return DataObject::get( 'Page', '"InFooter" = 1 AND "ParentID" = 0' );
-	}
-	
-	/**
-	 * Test if the current page is the homepage for the current domain.
-	 * 
-	 * @return boolean True if this page is the homepage for the current domain.
-	 */
-	public function IsHome() 
-	{
-		$domains = explode(',', $this->HomepageForDomain);
-		if (isset($_SERVER['HTTP_HOST']) ) 
-		{
-			foreach ($domains as $domain) 
-			{
-				if (trim($domain) == $_SERVER['HTTP_HOST']) return true;
-			}
-		}
-		return false;
+		return Page::get()->filter(array('InFooter' => true, 'ParenteID' => 0));
 	}
 	
 	/**

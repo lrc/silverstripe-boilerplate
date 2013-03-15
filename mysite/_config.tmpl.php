@@ -40,5 +40,4 @@ Email::setAdminEmail('${admin_email}');
 
 // Configure some CMS interface defaults.
 HtmlEditorConfig::get('cms')->insertButtonsBefore('bullist','sup','sub');
-HtmlEditorConfig::get('cms')->setOption('content_css', Director::absoluteBaseURL() . '/themes/default/css/build/editor.css');
 DateField::set_default_config('showcalendar', true);
