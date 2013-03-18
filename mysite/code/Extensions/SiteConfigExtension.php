@@ -2,7 +2,7 @@
 /**
  * Add some additional site wide configuration options.
  */
-class SiteConfigDecorator extends DataExtension {
+class SiteConfigExtension extends DataExtension {
 
 	/**
 	 * Add some database variables
