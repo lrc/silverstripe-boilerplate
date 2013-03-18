@@ -12,7 +12,7 @@
 		"php": ">=5.3.2",
 		"silverstripe/cms": "3.0.*@stable",
 		"silverstripe/framework": "3.0.*@stable",
-		"drzax/silverstripe-styleguide": "dev-master",
-		"lrc/silverstripe-boilerplate-theme": "dev-master"
+		"drzax/silverstripe-styleguide": "~0.1",
+		"lrc/silverstripe-boilerplate-theme": "~0.1"
 	}
 }
