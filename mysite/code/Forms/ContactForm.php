@@ -16,7 +16,7 @@ class ContactForm extends Form {
 		$fields->add($nameField = TextField::create('Name', _t('ContactForm.Name', 'Name', 'The name field label in a contact form.'), "", 80));
 		$fields->add($phoneField = TextField::create('Phone', _t('ContactForm.Telephone', 'Telephone', 'The telephone field label in a contact form.'), "", 20));
 		$fields->add($emailField = EmailField::create('Email', _t('ContactForm.Email', 'Email', 'The email field label in a contact form.'), "", 255));
-		$fields->add(new TextareaField('Message', _t('ContactForm.Message', 'Message', 'The message field label in a contact form.')));
+		$fields->add(TextareaField::create('Message', _t('ContactForm.Message', 'Message', 'The message field label in a contact form.')));
 		
 		// Setup required field validator
 		$required = array(
@@ -42,8 +42,7 @@ class ContactForm extends Form {
 		$actions = new FieldList();
 		$actions->add(new LiteralField('RequiredFields', '<div class="required">* Required</div>'));
 		$send = FormAction::create('send', 'Send')
-			->addExtraClass('btn btn-green')
-			->setButtonContent('<i class="icon icon-right"></i>Send');
+			->addExtraClass('btn');
 		$send->useButtonTag = true;
 		$actions->add($send);
 		
@@ -85,19 +84,17 @@ class ContactForm extends Form {
 	public function send($data, $form, $request){
 		
 		// Get and validate the to email addresses
-		$to = $this->controller->ToEmail;
-		$to = trim(str_replace(',', ';', $to));
-		
+		$to = trim(str_replace(';', ',', $this->controller->ToEmail));		
 		
 		// Save the contact enquiry
 		$contactData = ContactData::create();
 		$form->saveInto($contactData);
 		
-		// Email title
-		$title = _t('ContactForm.EmailSubject', 'New website enquiry', 'The subject line for notification emails sent when form is submitted.');
-		
 		// Write to database
 		$contactData->write();
+		
+		// Email title
+		$title = _t('ContactForm.EmailSubject', 'New website enquiry', 'The subject line for notification emails sent when form is submitted.');
 
 		// Send email
 		if ( !empty($to) ) {
