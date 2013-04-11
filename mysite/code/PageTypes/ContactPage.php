@@ -21,33 +21,29 @@ class ContactPage extends Page
 	 */
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
-		$fields->insertAfter( 
+		
+		$fields->addFieldToTab('Root.Form',  
+			TextField::create(
+				'SuccessTitle',				
+				_t('ContactPage.SuccessTitle', 'SuccessTitle')
+			)
+		);
+		
+		$fields->addFieldToTab('Root.Form',  
+			TextField::create(
+				'ToEmail', 
+				_t('ContactPage.NotificationsLabel', 'Notifications email'))
+				->setRightTitle(_t('ContactForm.NotificationsHelp', 'Where should enquiries be sent? Separate multiple addresses with a comma.')
+			)
+		);
+		
+		$fields->addFieldToTab('Root.Form',  
 			HtmlEditorField::create(
 				'SuccessMessage', 
-				'Message to display to users on successful submission of the contact form'
-			)->addExtraClass('stacked'), 'Content' );
-		$fields->insertAfter( 
-			TextField::create(
-				'SuccessTitle', 
-				'Title for success message screen'
-			), 'Content' );
-		return $fields;
-	}
-	
-	/**
-	 * Modify the settings screen.
-	 * @return FieldList
-	 */
-	public function getSettingsFields() 
-	{
-		$fields = parent::getSettingsFields();
-		$fields->push(
-			TextField::create('ToEmail', _t('ContactPage.NotificationsLabel', 'Notifications email'))
-				->setRightTitle(_t(
-					'ContactForm.NotificationsHelp', 
-					'Where should enquiries be sent? Separate multiple addresses with a comma.'
-				))
+				_t('ContactPage.SuccessMessage', 'Message to display to users on successful submission of the contact form')
+			)->addExtraClass('stacked')
 		);
+
 		return $fields;
 	}
 }
