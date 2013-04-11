@@ -1,14 +1,15 @@
 <?php
 
 /**
- * A model admin which provides access to form responses.
+ * A model admin which provides access to form enquiries.
  */
-class FormResponsesAdmin extends ModelAdmin {	
+class EnquiriesAdmin extends ModelAdmin {	
 	
 	public static $managed_models = array(
 		'ContactData'
 	); 
 
-	public static $url_segment = 'forms'; // Linked as /admin/forms/
-	public static $menu_title = 'Form Responses';  
+	public static $menu_icon = 'mysite/images/icon-enquiries.png'; 
+	public static $url_segment = 'enquiries'; // Linked as /admin/enquiries/
+	public static $menu_title = 'Enquiries';  
 }
