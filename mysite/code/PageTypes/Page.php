@@ -18,9 +18,14 @@ class Page extends SiteTree
 	function  getCMSFields() 
 	{
 		$fields = parent::getCMSFields();
-
-		$fields->addFieldToTab('Root.Excerpts', new UploadField('ImageExcerpt', 'Image excerpt for this page'));
-		$fields->addFieldToTab('Root.Excerpts', new TextareaField('TextExcerpt', 'Text excerpt for this page'));
+		
+		$excerptsGroup = ToggleCompositeField::create('ExcerptsGroup', 'Content Summary',
+			array(
+				UploadField::create('ImageExcerpt', 'Image excerpt for this page'),
+				TextareaField::create('TextExcerpt', 'Text excerpt for this page')
+			)
+		)->setHeadingLevel(4);
+		$fields->insertBefore($excerptsGroup, 'Content');
 
 		return $fields;
 	}
