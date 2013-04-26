@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "594b43010d5585c1b2ec0561c5b561f1",
+    "hash": "7d6c365adb184eef6f6d838cef4138cb",
     "packages": [
         {
             "name": "composer/installers",
@@ -123,16 +123,16 @@
         },
         {
             "name": "lrc/silverstripe-boilerplate-theme",
-            "version": "0.1",
+            "version": "0.2",
             "source": {
                 "type": "git",
                 "url": "http://github.com/lrc/silverstripe-boilerplate-theme",
-                "reference": "0.1"
+                "reference": "0.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lrc/silverstripe-boilerplate-theme/zipball/0.1",
-                "reference": "0.1",
+                "url": "https://api.github.com/repos/lrc/silverstripe-boilerplate-theme/zipball/0.2",
+                "reference": "0.2",
                 "shasum": ""
             },
             "require": {
@@ -153,10 +153,10 @@
                 "theme"
             ],
             "support": {
-                "source": "https://github.com/lrc/silverstripe-boilerplate-theme/tree/0.1",
+                "source": "https://github.com/lrc/silverstripe-boilerplate-theme/tree/0.2",
                 "issues": "https://github.com/lrc/silverstripe-boilerplate-theme/issues"
             },
-            "time": "2013-03-17 23:22:28"
+            "time": "2013-04-26 02:00:14"
         },
         {
             "name": "silverstripe/cms",
