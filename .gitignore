@@ -5,7 +5,9 @@ tools/phing-metadata
 .project
 .settings
 .sass-cache
+.vagrant
 vendor
 cms
 framework
 silverstripe-styleguide
+themes/silverstripe-boilerplate-theme

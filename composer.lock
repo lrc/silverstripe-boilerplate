@@ -1,0 +1,272 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+    ],
+    "hash": "594b43010d5585c1b2ec0561c5b561f1",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "v1.0.3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/composer/installers/zipball/v1.0.3",
+                "reference": "v1.0.3",
+                "shasum": ""
+            },
+            "replace": {
+                "shama/baton": "*"
+            },
+            "require-dev": {
+                "composer/composer": "1.0.*@dev",
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "composer-installer",
+            "extra": {
+                "class": "Composer\\Installers\\Installer",
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Composer\\Installers\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Kyle Robinson Young",
+                    "email": "kyle@dontkry.com",
+                    "homepage": "http://dontkry.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A multi-framework Composer library installer",
+            "homepage": "http://composer.github.com/installers/",
+            "keywords": [
+                "TYPO3 Flow",
+                "TYPO3 Neos",
+                "agl",
+                "cakephp",
+                "codeigniter",
+                "drupal",
+                "fuelphp",
+                "installer",
+                "joomla",
+                "kohana",
+                "laravel",
+                "li3",
+                "lithium",
+                "mako",
+                "phpbb",
+                "ppi",
+                "silverstripe",
+                "symfony",
+                "wordpress",
+                "yii",
+                "zend"
+            ],
+            "time": "2013-03-02 22:45:58"
+        },
+        {
+            "name": "drzax/silverstripe-styleguide",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/drzax/silverstripe-kaleistyleguide",
+                "reference": "0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/drzax/silverstripe-kaleistyleguide/zipball/0.1",
+                "reference": "0.1",
+                "shasum": ""
+            },
+            "type": "silverstripe-module",
+            "license": [
+                "Unlicense"
+            ],
+            "authors": [
+                {
+                    "name": "Thomas Davis",
+                    "email": "thomasalwyndavis@gmail.com"
+                },
+                {
+                    "name": "Simon Elvery",
+                    "email": "simon@elvery.net"
+                },
+                {
+                    "name": "Left, Right & Centre",
+                    "email": "hello@leftrightandcentre.com.au"
+                }
+            ],
+            "description": "A fork of the Kalei Style Guide designed to work with SilverStripe themes",
+            "homepage": "https://github.com/lrc/silverstripe-kaleistyleguide/",
+            "keywords": [
+                "silverstripe",
+                "style-guide"
+            ],
+            "support": {
+                "source": "https://github.com/drzax/silverstripe-kaleistyleguide/tree/0.1",
+                "issues": "https://github.com/drzax/silverstripe-kaleistyleguide/issues"
+            },
+            "time": "2013-03-17 23:31:10"
+        },
+        {
+            "name": "lrc/silverstripe-boilerplate-theme",
+            "version": "0.1",
+            "source": {
+                "type": "git",
+                "url": "http://github.com/lrc/silverstripe-boilerplate-theme",
+                "reference": "0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lrc/silverstripe-boilerplate-theme/zipball/0.1",
+                "reference": "0.1",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "silverstripe/framework": ">=3.0"
+            },
+            "type": "silverstripe-theme",
+            "authors": [
+                {
+                    "name": "Left, Right & Centre",
+                    "homepage": "http://leftrightandcentre.com.au",
+                    "email": "web@leftrightandcentre.com.au"
+                }
+            ],
+            "description": "A simple boilerplate theme for SilverStripe",
+            "keywords": [
+                "silverstripe",
+                "theme"
+            ],
+            "support": {
+                "source": "https://github.com/lrc/silverstripe-boilerplate-theme/tree/0.1",
+                "issues": "https://github.com/lrc/silverstripe-boilerplate-theme/issues"
+            },
+            "time": "2013-03-17 23:22:28"
+        },
+        {
+            "name": "silverstripe/cms",
+            "version": "3.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-cms.git",
+                "reference": "3.0.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/3.0.5",
+                "reference": "3.0.5",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2",
+                "silverstripe/framework": "3.0.*"
+            },
+            "type": "silverstripe-module",
+            "autoload": {
+                "classmap": [
+                    "tests/behat/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "SilverStripe",
+                    "homepage": "http://silverstripe.com"
+                },
+                {
+                    "name": "The SilverStripe Community",
+                    "homepage": "http://silverstripe.org"
+                }
+            ],
+            "description": "The SilverStripe Content Management System",
+            "homepage": "http://silverstripe.org",
+            "keywords": [
+                "cms",
+                "silverstripe"
+            ],
+            "time": "2013-02-18 00:20:00"
+        },
+        {
+            "name": "silverstripe/framework",
+            "version": "3.0.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/sapphire.git",
+                "reference": "3.0.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/sapphire/zipball/3.0.5",
+                "reference": "3.0.5",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "*",
+                "php": ">=5.3.2"
+            },
+            "type": "silverstripe-module",
+            "autoload": {
+                "classmap": [
+                    "tests/behat/features/bootstrap"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "SilverStripe",
+                    "homepage": "http://silverstripe.com"
+                },
+                {
+                    "name": "The SilverStripe Community",
+                    "homepage": "http://silverstripe.org"
+                }
+            ],
+            "description": "The SilverStripe framework",
+            "homepage": "http://silverstripe.org",
+            "keywords": [
+                "framework",
+                "silverstripe"
+            ],
+            "time": "2013-02-19 23:39:00"
+        }
+    ],
+    "packages-dev": [
+
+    ],
+    "aliases": [
+
+    ],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "silverstripe/cms": 0,
+        "silverstripe/framework": 0
+    },
+    "platform": {
+        "php": ">=5.3.2"
+    },
+    "platform-dev": [
+
+    ]
+}
