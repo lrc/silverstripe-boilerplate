@@ -53,7 +53,7 @@ class Page_Controller extends ContentController
 	 */
 	public function FooterMenu()
 	{
-		return Page::get()->filter(array('InFooter' => true, 'ParenteID' => 0));
+		return Page::get()->filter(array('InFooter' => true, 'ParentID' => 0));
 	}
 	
 	/**
